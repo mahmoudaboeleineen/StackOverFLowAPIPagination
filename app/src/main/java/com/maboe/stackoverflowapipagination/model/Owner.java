@@ -6,10 +6,12 @@ import com.google.gson.annotations.SerializedName;
 public class Owner {
     @SerializedName("reputation")
     @Expose
-    private Integer reputation;
+    private String reputation;
+
     @SerializedName("user_id")
     @Expose
     private Integer userId;
+
     @SerializedName("user_type")
     @Expose
     private String userType;
@@ -24,17 +26,15 @@ public class Owner {
     private String link;
     @SerializedName("accept_rate")
     @Expose
-    private Integer acceptRate;
+    private String acceptRate;
 
     /**
      * No args constructor for use in serialization
-     *
      */
     public Owner() {
     }
 
     /**
-     *
      * @param acceptRate
      * @param displayName
      * @param link
@@ -43,7 +43,7 @@ public class Owner {
      * @param profileImage
      * @param userId
      */
-    public Owner(Integer reputation, Integer userId, String userType, String profileImage, String displayName, String link, Integer acceptRate) {
+    public Owner(String reputation, Integer userId, String userType, String profileImage, String displayName, String link, String acceptRate) {
         super();
         this.reputation = reputation;
         this.userId = userId;
@@ -54,11 +54,11 @@ public class Owner {
         this.acceptRate = acceptRate;
     }
 
-    public Integer getReputation() {
+    public String getReputation() {
         return reputation;
     }
 
-    public void setReputation(Integer reputation) {
+    public void setReputation(String reputation) {
         this.reputation = reputation;
     }
 
@@ -102,11 +102,11 @@ public class Owner {
         this.link = link;
     }
 
-    public Integer getAcceptRate() {
+    public String getAcceptRate() {
         return acceptRate;
     }
 
-    public void setAcceptRate(Integer acceptRate) {
+    public void setAcceptRate(String acceptRate) {
         this.acceptRate = acceptRate;
     }
 

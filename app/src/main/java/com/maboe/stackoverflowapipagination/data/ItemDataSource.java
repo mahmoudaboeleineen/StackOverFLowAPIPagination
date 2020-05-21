@@ -20,9 +20,9 @@ public class ItemDataSource extends PageKeyedDataSource<Integer, Item> {
     public static final String TAG = ItemDataSource.class.getSimpleName();
 
     public static final int PAGE_SIZE = 50;
-    public static final int FIRST_PAGE = 1;
-    public static final String SITE_NAME = "stackoverflow";
-    Context context;
+    private static final int FIRST_PAGE = 1;
+    private static final String SITE_NAME = "stackoverflow";
+    private Context context;
 
     @Override
     public void loadInitial(@NonNull LoadInitialParams<Integer> params, @NonNull final LoadInitialCallback<Integer, Item> callback) {
@@ -86,7 +86,7 @@ public class ItemDataSource extends PageKeyedDataSource<Integer, Item> {
 
                     @Override
                     public void onFailure(Call<StackApiResponse> call, Throwable t) {
-                        Toast.makeText(context, "Connection Erorr!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context, "Connection Error!", Toast.LENGTH_SHORT).show();
                     }
                 });
     }

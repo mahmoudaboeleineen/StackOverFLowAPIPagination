@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">StackOverFLowAPIPagination</string>
+    <string name="user_avatar">User Avatar</string>
+    <string name="reputation">Reputation</string>
+    <string name="_125">125</string>
+    <string name="score">Score</string>
+    <string name="last_activity_date">last Activity Date :</string>
+    <string name="creation_date">Creation Date :</string>
+    <string name="yyyy_mm_dd_hh_mm_ss">yyyy-MM-dd HH:mm:ss.</string>
+    <string name="edit_date">Edit Date :</string>
+    <string name="wiliam_gmail_com">Wiliam@gmail.com</string>
+    <string name="email">Email :</string>
+    <string name="name">Name :</string>
+    <string name="_0">0</string>
+    <string name="accept_rate">Accept Rate</string>
+    <string name="_1205">1205</string>
 </resources>

@@ -9,7 +9,7 @@ public class StackApiResponse {
 
     @SerializedName("items")
     @Expose
-    private List<Item> items = null;
+    private List<Item> items;
 
     @SerializedName("has_more")
     @Expose

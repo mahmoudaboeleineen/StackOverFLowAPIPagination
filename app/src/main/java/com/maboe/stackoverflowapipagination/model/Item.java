@@ -16,10 +16,10 @@ public class Item {
     private Integer score;
     @SerializedName("last_activity_date")
     @Expose
-    private Integer lastActivityDate;
+    private long lastActivityDate;
     @SerializedName("creation_date")
     @Expose
-    private Integer creationDate;
+    private long creationDate;
     @SerializedName("answer_id")
     @Expose
     private Integer answerId;
@@ -28,16 +28,15 @@ public class Item {
     private Integer questionId;
     @SerializedName("last_edit_date")
     @Expose
-    private Integer lastEditDate;
+    private long lastEditDate;
 
     /**
      * No args constructor for use in serialization
-     *
      */
     public Item() {
     }
 
-    public Item(Owner owner, Boolean isAccepted, Integer score, Integer lastActivityDate, Integer creationDate, Integer answerId, Integer questionId, Integer lastEditDate) {
+    public Item(Owner owner, Boolean isAccepted, Integer score, long lastActivityDate, long creationDate, Integer answerId, Integer questionId, long lastEditDate) {
         super();
         this.owner = owner;
         this.isAccepted = isAccepted;
@@ -73,19 +72,19 @@ public class Item {
         this.score = score;
     }
 
-    public Integer getLastActivityDate() {
+    public long getLastActivityDate() {
         return lastActivityDate;
     }
 
-    public void setLastActivityDate(Integer lastActivityDate) {
+    public void setLastActivityDate(long lastActivityDate) {
         this.lastActivityDate = lastActivityDate;
     }
 
-    public Integer getCreationDate() {
+    public long getCreationDate() {
         return creationDate;
     }
 
-    public void setCreationDate(Integer creationDate) {
+    public void setCreationDate(long creationDate) {
         this.creationDate = creationDate;
     }
 
@@ -105,11 +104,11 @@ public class Item {
         this.questionId = questionId;
     }
 
-    public Integer getLastEditDate() {
+    public long getLastEditDate() {
         return lastEditDate;
     }
 
-    public void setLastEditDate(Integer lastEditDate) {
+    public void setLastEditDate(long lastEditDate) {
         this.lastEditDate = lastEditDate;
     }
 
